@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "unsplash-project"
+version = "0.1.0"
+description = "Backend service for unsplash project"
+license = "MIT"
+authors = [
+    "Okereke Grace <graceokereke22@gmail.com>",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.6"
+fastapi = "^0.109.1"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
+fastapi-restful = "^0.5.0"
+typing-inspect = "^0.9.0"
