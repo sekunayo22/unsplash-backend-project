@@ -24,7 +24,7 @@ class CollectionController():
             value = {}
             value["title"] = item.title
             value["total_photos"] = item.total_photos
-            value["cover_photo"] = item.cover_photo.links.self
+            value["cover_photo"] = item.cover_photo.urls.raw
             value_array.append(value)
         return value_array
     
