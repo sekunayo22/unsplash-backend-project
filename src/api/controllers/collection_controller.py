@@ -43,10 +43,10 @@ class CollectionController():
             raise exc
         for item in result:
             value = {}
-            value["last_name"] = item.user.last_name
-            value["first_name"] = item.user.first_name
-            value["published_on"] = item.user.updated_at
-            value["profile_image"] = item.user.profile_image.small
+            value["lastName"] = item.user.last_name
+            value["firstName"] = item.user.first_name
+            value["publishedOn"] = item.user.updated_at
+            value["profileImage"] = item.user.profile_image.small
             value["image"] = item.urls.raw
             value_array.append(value)
         return value_array
