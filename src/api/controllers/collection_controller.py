@@ -43,6 +43,8 @@ class CollectionController():
             raise exc
         for item in result:
             value = {}
+            value["collectionId"] = collection_id
+            value["id"] = item.id
             value["lastName"] = item.user.last_name
             value["firstName"] = item.user.first_name
             value["publishedOn"] = item.user.updated_at
